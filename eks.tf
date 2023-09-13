@@ -52,7 +52,7 @@ module "eks" {
   }
 
   tags = {
-    Environment = "demo"
+    Environment = "prod"
     Terraform   = "true"
   }
 

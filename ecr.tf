@@ -25,6 +25,6 @@ module "ecr" {
 
   tags = {
     Terraform   = "true"
-    Environment = "demo"
+    Environment = "prod"
   }
 }
