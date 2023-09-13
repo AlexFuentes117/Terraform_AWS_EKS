@@ -10,17 +10,17 @@ module "vpc" {
 
   create_igw = true #Que las subnets publicas accesan a internet
 
-  enable_nat_gateway = true  #Que las subnets privadas puedan salir a internet
-  single_nat_gateway = true #Para que cada subnet privada tenga un Nat Gateway 
+  enable_nat_gateway     = true #Que las subnets privadas puedan salir a internet
+  single_nat_gateway     = true #Para que cada subnet privada tenga un Nat Gateway 
   one_nat_gateway_per_az = false
 
   enable_dns_hostnames = true
-  enable_dns_support = true
+  enable_dns_support   = true
 
   enable_vpn_gateway = true
 
   tags = {
     Terraform   = "true"
-    Environment = "GBM"
+    Environment = "prod"
   }
 }
