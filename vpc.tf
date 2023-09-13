@@ -22,6 +22,6 @@ module "vpc" {
   tags = {
     Terraform   = "true"
     Environment = "prod"
-    VPC         = "prod"
+    VPC2        = "prod"
   }
 }
